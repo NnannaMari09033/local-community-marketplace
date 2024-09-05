@@ -87,20 +87,17 @@ Once the server is running, you can interact with the API using tools like Postm
 Account
 Register: POST /account/register/
 Login: POST /account/login/
-Update Profile: PUT /account/profile/
-Delete Account: DELETE /account/delete/
+Logout: PUT /account/logout/
+Profile: DELETE/GET/PUT  /account/profile/
 Listings
-Create Listing: POST /listings/create/
-View Listings: GET /listings/
-Update Listing: PUT /listings/update/<id>/
-Delete Listing: DELETE /listings/delete/<id>/
+Create Listing: POST /listings/listings/
+View Listings: GET/PUT/DELETE /listings/<int:pk>/
 Search Listings: GET /listings/search/?query=<search_term>
 Filter Listings: GET /listings/filter/?price_min=&price_max=&category=&date_posted=
 Messaging
 Send Message: POST /messaging/send/
-View Messages: GET /messaging/
-Update Message: PUT /messaging/update/<id>/
-Delete Message: DELETE /messaging/delete/<id>/
+Inbox Messages: GET /messaging/inbox/
+Sent Messages: GET /messaging/sent/
 Contact
 For any inquiries or support, please contact:
 Email: nnannamari@gmail.com
